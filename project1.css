@@ -1,0 +1,115 @@
+body, html{
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  min-height: 100vh;
+}
+
+/* headings */
+#title{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2.2rem;
+}
+
+#description{
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+/* stop */
+
+/* form container */
+#survey-form {
+  background-color: rgba(0, 0, 50, 0.8);
+  max-width: 720px;
+  margin: 20px auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+/* stop */
+
+/* inputs, selects, textarea */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+/* stop */
+
+
+
+label{
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.background-image{
+  position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+/* checkbox */
+.checkbox-group label,
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+  display: block;
+  font-size: 1rem;
+}
+
+.checkbox-group label {
+  margin-bottom: 6px;
+}
+
+.checkbox-group input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+/* ends here. */
+
+/* submit botton */
+button[type="submit"] {
+  background-color: #37af65;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  padding: 14px 20px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #2e8b57;
+}
+/* stop */
+
+@media (max-width: 600px) {
+  #survey-form {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  #title {
+    font-size: 1.6rem;
+  }
+}
